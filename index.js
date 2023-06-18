@@ -96,10 +96,6 @@ client.on('message', async message => {
   }
 
   if (message.body === '!roast') {
-    const chat = await message.getChat()
-
-    if (chat.isGroup) {
-      client.sendMessage(insults[Math.floor(Math.random() * insults.length)])
-    }
+    client.sendMessage(insults[Math.floor(Math.random() * insults.length)])
   }
 })
