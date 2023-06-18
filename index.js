@@ -96,6 +96,8 @@ client.on('message', async message => {
   }
 
   if (message.body === '!roast') {
-    client.sendMessage(insults[Math.floor(Math.random() * insults.length)])
+    await client.sendMessage(
+      insults[Math.floor(Math.random() * insults.length)]
+    )
   }
 })
