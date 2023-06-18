@@ -71,6 +71,8 @@ const insults = [
 ]
 
 client.on('message', async message => {
+  console.log(message.body)
+
   if (message.body === '!tagall') {
     const chat = await message.getChat()
 
