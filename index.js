@@ -71,39 +71,29 @@ const insults = [
 ]
 
 client.on('message', async message => {
-  console.log(message.body)
+  if (message.body === '!tagall') {
+    const chat = await message.getChat()
 
-  try {
-    if (message.body === '!tagall') {
-      const chat = await message.getChat()
+    if (chat.isGroup) {
+      let text = ''
 
-      if (chat.isGroup) {
-        let text = ''
+      const mentions = []
 
-        const mentions = []
+      for (const participant of chat.participants) {
+        const contact = await client.getContactById(participant.id._serialized)
 
-        for (const participant of chat.participants) {
-          const contact = await client.getContactById(
-            participant.id._serialized
-          )
+        mentions.push(contact)
 
-          mentions.push(contact)
-
-          text += `@${participant.id.user}`
-        }
-
-        await chat.sendMessage(text, {
-          mentions
-        })
+        text += `@${participant.id.user}`
       }
-    }
 
-    if (message.body === '!roast') {
-      await client.sendMessage(
-        insults[Math.floor(Math.random() * insults.length)]
-      )
+      await chat.sendMessage(text, { mentions })
     }
-  } catch (error) {
-    console.log(error)
+  }
+})
+
+client.on('message', message => {
+  if (message.body === '!roast') {
+    message.reply(insults[Math.floor(Math.random() * insults.length)])
   }
 })

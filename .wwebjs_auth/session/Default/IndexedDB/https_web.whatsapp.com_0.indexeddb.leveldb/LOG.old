@@ -1,12 +1,3 @@
-2023/06/18-05:19:47.773 17e9 Reusing MANIFEST /home/lasisi/Documents/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
-2023/06/18-05:19:47.774 17e9 Recovering log #14
-2023/06/18-05:19:48.040 17e9 Reusing old log /home/lasisi/Documents/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000014.log 
-2023/06/18-05:20:42.880 17ef Level-0 table #19: started
-2023/06/18-05:20:43.051 17ef Level-0 table #19: 1138900 bytes OK
-2023/06/18-05:20:43.155 17ef Delete type=0 #14
-2023/06/18-05:20:43.424 1798 Compacting 1@1 + 1@2 files
-2023/06/18-05:20:43.734 1798 Generated table #20@1: 35999 keys, 1527063 bytes
-2023/06/18-05:20:43.735 1798 Compacted 1@1 + 1@2 files => 1527063 bytes
-2023/06/18-05:20:43.865 1798 compacted to: files[ 0 0 1 0 0 0 0 ]
-2023/06/18-05:20:43.866 1798 Delete type=2 #16
-2023/06/18-05:20:43.866 1798 Delete type=2 #19
+2023/06/18-06:50:17.688 302e Reusing MANIFEST /home/lasisi/Documents/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2023/06/18-06:50:17.689 302e Recovering log #22
+2023/06/18-06:50:17.715 302e Reusing old log /home/lasisi/Documents/whatsapp-bot/.wwebjs_auth/session/Default/IndexedDB/https_web.whatsapp.com_0.indexeddb.leveldb/000022.log 
