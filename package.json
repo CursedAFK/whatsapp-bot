@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "dev": "node ./api/bot.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "qrcode-terminal": "^0.12.0",

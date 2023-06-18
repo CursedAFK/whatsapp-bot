@@ -40,7 +40,3 @@ client.on('message', async message => {
     }
   }
 })
-
-module.exports = async (req, res) => {
-  res.json({ message: 'WhatsApp bot serverless function' })
-}
